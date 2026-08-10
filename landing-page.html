@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exported from Figma">
+  <title>Exported Figma Design</title>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<pre>
+
+
+
+</pre>
+<img src="images/fala_comm_resized.png" alt="fala">
+<img src="images/CC_logo_website_WIP_size.png" alt="logo">
+<!--<img src="images/landing-page-1.png" class="landing-page-1" alt="landing-page" />-->
+<pre>
+
+
+
+</pre>
+
+
+
+<!--var texts = [
+  "Time keeps you in a constant state of change, ever pushing your life in a direction, and where your life is headed depends on whether or not it is under the influence of your intent. The way I see it, Visitor, so as long as your life is going somewhere, you might as well be the one choosing its direction.",
+  "Change is rarely easy, but I've seldom heard anyone say it wasn't worth it. They'll speak about how their lives have been enhanced, how they have things now that they didn't before, and about the ways they feel now that they wouldn't have otherwise. Oftentimes it's a matter of finding the right combination of catalysts to do so. I may be help with that.",
+  "Some Visitors find themselves going in circles, repeating the same cycles over and over again. It often comes from an unidentified influence from the depths of the mind, and until the unconscious is made conscious, it will deictate their lives, and they will call it the weavings of Fate. Perhaps I can help you pull back the curtain to better better understand yourself.",
+  "If you've tried everything and nothing works, then the problem might lie within you. However, make no mistake, this is great news; because out of everything in life, the one entity anyone has the most amount of control over, Visitor, is non other than themselves. What if I could help you harness that control?",
+  
+];
+
+document.getElementById('randomText').value = texts[Math.floor(Math.random()*texts.length)];
+
+// in the CSS file: <input type="text" id="randomText">
+-->
+
+<!-- <div class = "center"> <!--current place holder-->
+<!--	
+	<p class = "fadeInAnimated"> Time keeps you in a constant state of change, ever pushing your life in a direction, and where your life is headed depends on whether or not it is under the influence of your intent. <br><br> </p>
+</div>
+<div class = "center">
+	<p id = "third" class = "fadeInAnimated">The way I see it, Visitor, so as long as your life is going somewhere, you might as well be the one choosing its direction. </p>
+</div> -->
+<div class = "center">
+	<p id="firstQuote" class = "fadeInAnimated"><br><br></p>
+</div>
+<br><br><br><br>
+<div class = "center">
+	<p id="secondQuote" class = "fadeInAnimatedTwo"></p>
+</div>
+
+<script>
+  const quotes = [
+      "Time keeps you in a constant state of change, ever pushing your life in a direction, and where your life is headed depends on whether or not it is under the influence of your intent.",
+      "Change is rarely easy, but I've seldom heard anyone say it wasn't worth it. They'll speak about how their lives have been enhanced, how they have things now that they didn't before, and about the ways they feel now that they wouldn't have otherwise. Oftentimes it's a matter of finding the right combination of catalysts to do so.",
+      "Some Visitors find themselves going in circles, repeating the same cycles over and over again. It often comes from an unidentified influence from the depths of the mind, and until the unconscious is made conscious, it will deictate their lives, and they will call it the weavings of Fate.",
+	  "If you've tried everything and nothing works, then the problem might lie within you. However, make no mistake, this is great news; because out of everything in life, the one entity anyone has the most amount of control over, Visitor, is non other than themselves."
+  ];
+  
+  const quotesSecond = [
+      "The way I see it, Visitor, so as long as your life is going somewhere, you might as well be the one choosing its direction.",
+      "I may be help with that.",
+      "Perhaps I can help you pull back the curtain to better understand yourself.",
+	  "What if I could help you harness that control?"
+  ];
+  const randomNum = Math.floor(Math.random() * quotes.length);
+  document.getElementById("firstQuote").textContent = quotes[randomNum];
+  document.getElementById("secondQuote").textContent = quotesSecond[randomNum];
+</script>
+
+<pre>
+
+
+
+
+
+
+
+</pre>
+<div class = "center">
+	<p class = "white"	>
+	Moar Coming Soon! <br>
+	</p>
+</div>
+<div class = "center">
+	<p class = "white small">
+	This site is a Work-In-Progress!
+	</p>
+</div>
+	<style>
+.reach-out {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: 'ADLaM Display';
+	  font-size: 32px;
+	  color: white;
+	  position: absolute;
+      bottom : 100px;
+	  left: 50%;
+	  transform: translateX(-50%);
+    }
+.reach-out .social {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      color: inherit;
+    }
+.reach-out .social img {
+      width: 32px;
+      height: 32px;
+    }
+    /* pipe between links only — never leading/trailing */
+.reach-out .social + .social::before {
+      content: "|";
+      margin-right: 1rem;
+      opacity: 0.4;
+    }
+.reach-out .social:hover span { text-decoration: underline; }
+.icon.bluesky { --icon: url("assets/bluesky.svg"); }
+.icon.discord { --icon: url("assets/discord.svg"); }
+</style>	
+<footer class="reach-out">
+    <span>Reach Out:</span>
+    <a href="https://bsky.app/profile/furry.coach" class="social">
+      <img src="assets/bluesky.svg" alt="" width="18" height="18">
+      <span>furry.coach</span>
+    </a>
+    <a href="https://discord.gg/yourinvite" class="social">
+      <img src="assets/discord.svg" alt="" width="18" height="18">
+      <span>slyde_australis</span>
+    </a>
+
+    <!-- OPTION 2 markup (recolorable) — use in place of the <img> above:
+    <a href="https://bsky.app/profile/yourname" class="social">
+      <span class="icon bluesky" aria-hidden="true"></span>
+      <span>BlueskyName</span>
+    </a>
+    -->
+  </footer>
+
+</body>
+</html>

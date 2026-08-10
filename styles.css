@@ -1,0 +1,131 @@
+/* Add font files for Work Sans */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('fonts/work-sans.woff2') format('woff2'),
+       url('fonts/work-sans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-family-work-sans: 'Work Sans', sans-serif;
+  --Fuschia/100: rgba(239, 93, 168, 1);
+  --Fuschia/80: rgba(241, 120, 182, 1);
+  --Fuschia/60: rgba(252, 221, 236, 1);
+  --Iris/100: rgba(93, 95, 239, 1);
+  --Iris/80: rgba(120, 121, 241, 1);
+  --Iris/60: rgba(165, 166, 246, 1);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url("images/Fala_WIP_site_background.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: 'ADLaM Display';
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 48px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  color: #F4D866;
+  max-width:1200px;
+  position: center;
+  align: center;
+}
+
+section {
+  align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center; /*centers the text box*/
+  align-items: center;
+	
+}
+
+.white {
+  font-size: 96px;
+  color: white;
+}	
+
+.small {
+  font-size: 32px;	
+}
+/* Prototype Links 
+a.prototype-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}*/
+
+.landing-page-1 {
+@media (max-width: 1440px) {
+  .landing-page-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .landing-page-1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fadeInAnimated
+{
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+}
+
+.fadeInAnimatedTwo
+{
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 3s;
+}
+
+#second { /* use id = "second" */
+  animation-delay: 2s;
+}
+
+#third {
+  animation-delay: 4s;
+}
