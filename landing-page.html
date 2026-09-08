@@ -4,20 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exported from Figma">
-  <title>Exported Figma Design</title>
+  <meta name="description" content="Catalyst Coaching">
+  <title>Changing Lives Fur the Better!</title>
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <pre>
 
-
-
 </pre>
-<img src="images/fala_comm_resized.png" alt="fala">
-<img src="images/CC_logo_website_WIP_size.png" alt="logo">
-<!--<img src="images/landing-page-1.png" class="landing-page-1" alt="landing-page" />-->
+<img src="images/fala_comm_resized.png" class = "mainArt" alt="fala">
+<img src="images/CC_logo_website_WIP_size.png" class = "mainLogo" alt="logo">
 <pre>
 
 
@@ -49,7 +46,7 @@ document.getElementById('randomText').value = texts[Math.floor(Math.random()*tex
 <div class = "center">
 	<p id="firstQuote" class = "fadeInAnimated"><br><br></p>
 </div>
-<br><br><br><br>
+<br><br><br>
 <div class = "center">
 	<p id="secondQuote" class = "fadeInAnimatedTwo"></p>
 </div>
@@ -57,16 +54,20 @@ document.getElementById('randomText').value = texts[Math.floor(Math.random()*tex
 <script>
   const quotes = [
       "Time keeps you in a constant state of change, ever pushing your life in a direction, and where your life is headed depends on whether or not it is under the influence of your intent.",
-      "Change is rarely easy, but I've seldom heard anyone say it wasn't worth it. They'll speak about how their lives have been enhanced, how they have things now that they didn't before, and about the ways they feel now that they wouldn't have otherwise. Oftentimes it's a matter of finding the right combination of catalysts to do so.",
+      "Change is rarely easy, but I've seldom heard anyone say it wasn't worth it. They'll speak about how their lives have been enhanced, how they have things now that they didn't before, and about the ways they feel now that they wouldn't have otherwise. Oftentimes, it's a matter of finding the right combination of catalysts to do so.",
       "Some Visitors find themselves going in circles, repeating the same cycles over and over again. It often comes from an unidentified influence from the depths of the mind, and until the unconscious is made conscious, it will deictate their lives, and they will call it the weavings of Fate.",
-	  "If you've tried everything and nothing works, then the problem might lie within you. However, make no mistake, this is great news; because out of everything in life, the one entity anyone has the most amount of control over, Visitor, is non other than themselves."
+	  "If you've tried everything and nothing works, then the problem might lie within you. However, make no mistake, this is great news; because out of everything in life, the one entity anyone has the most amount of control over, Visitor, is none other than themselves.",
+	  "Sometimes, you might find yourself a great deal of motivation in the dead of night, a sudden gusto to change one's life once and for all, only for it to vanish come morning's light.",
+	  "Oftentimes, we're so focused on where we should be in life that the decision we sometimes make are not suitable for the present time, and then we're surprised when things don't go our way."
   ];
   
   const quotesSecond = [
       "The way I see it, Visitor, so as long as your life is going somewhere, you might as well be the one choosing its direction.",
-      "I may be help with that.",
-      "Perhaps I can help you pull back the curtain to better understand yourself.",
-	  "What if I could help you harness that control?"
+      "If that is a journey you are willing to take, Visitor, I would be honored to guide you through.",
+      "A different perspective might be the thing you need to help you better understand yourself.",
+	  "What if I told you it was possible to reclaim that control?",
+	  "Should you find yourself willing, Visitor, I can perhaps show you the way to bottle the lightning that is your motivation.",
+	  "Let me meet you where you're at, dear Visitor, and we'll go from there."
   ];
   const randomNum = Math.floor(Math.random() * quotes.length);
   document.getElementById("firstQuote").textContent = quotes[randomNum];
@@ -74,8 +75,6 @@ document.getElementById('randomText').value = texts[Math.floor(Math.random()*tex
 </script>
 
 <pre>
-
-
 
 
 
@@ -98,10 +97,10 @@ document.getElementById('randomText').value = texts[Math.floor(Math.random()*tex
       align-items: center;
       gap: 1rem;
       font-family: 'ADLaM Display';
-	  font-size: 32px;
+	  font-size: 20px;
 	  color: white;
 	  position: absolute;
-      bottom : 100px;
+      bottom : 2vh;
 	  left: 50%;
 	  transform: translateX(-50%);
     }
@@ -113,8 +112,8 @@ document.getElementById('randomText').value = texts[Math.floor(Math.random()*tex
       color: inherit;
     }
 .reach-out .social img {
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
     }
     /* pipe between links only — never leading/trailing */
 .reach-out .social + .social::before {
