@@ -39,17 +39,37 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
-  height: auto;
+
+}
+
+.mainArt {
+  width: 30vw;
+  max-width:483px;
+  max-height: 400px;
+  aspect-ratio: 483/658;
+  object-fit: contain;
+
+}
+
+.mainLogo {
+	width: 50vw;
+	max-width: 762px;
+	max-height: 180px;
+	aspect-ratio: 762/279;
+	object-fit: contain;
+}
+
+span {
+  font-size: min(3vw, 24px);
 }
 
 p {
-  font-size: 48px;
+  font-size: min(3vw, 24px);
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
   color: #F4D866;
-  max-width:1200px;
+  max-width: 50vw;
   position: center;
   align: center;
 }
@@ -66,12 +86,13 @@ section {
 }
 
 .white {
-  font-size: 96px;
+  font-size: min(8vw, 48px);
   color: white;
+  max-width: 90vw;
 }	
 
 .small {
-  font-size: 32px;	
+  font-size: min(3vw, 16px);	
 }
 /* Prototype Links 
 a.prototype-link {
@@ -80,9 +101,9 @@ a.prototype-link {
   display: contents;
 }*/
 
-.landing-page-1 {
+.index-1 {
 @media (max-width: 1440px) {
-  .landing-page-1 {
+  .index-1 {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -91,7 +112,7 @@ a.prototype-link {
 
 
 @media (max-width: 768px) {
-  .landing-page-1 {
+  .index-1 {
     padding-left: 16px;
     padding-right: 16px;
   }
