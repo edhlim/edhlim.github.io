@@ -61,6 +61,7 @@ img {
 
 span {
   font-size: min(3vw, 24px);
+  white-space: nowrap;
 }
 
 p {
